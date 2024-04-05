@@ -14,7 +14,7 @@ function App() {
             fetchData();
             setSearchTerm('');
         }
-    }, [buttonClicked,]);
+    }, [buttonClicked]);
 
     const fetchData = () => {
         axios.get(`http://api.github.com/users/${searchTerm}?client_id=3a2b4fa333b9163649fa&client_secret=add7ef90520823ba63304f643411fb1a35007ac9&sort=created`)
